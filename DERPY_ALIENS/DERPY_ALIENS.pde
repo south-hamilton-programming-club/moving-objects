@@ -27,7 +27,7 @@
     if (alienx>width) alienxv=-alienxv; //If it goes too far right, bounce.
     if (alienx<0) alienxv=-alienxv; // If it goes too far left, bounce.
     
-    alienx+=aliexyv; // Add vertical change to x (again).
+    alieny+=alienyv; // Add vertical change to x (again).
     if (alieny>height) alienyv=-alienyv; // If it goes too far right, bounce.
     if (alieny<0) alienyv=- alienyv; // If it goes too far left, bounce.
   }

@@ -1,4 +1,4 @@
 moving-objects
 ==============
 
-Processing Object-Oriented Practice - by Chance
+Here you'll find initial projects about learning to make objects move.

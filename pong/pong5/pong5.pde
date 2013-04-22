@@ -8,12 +8,12 @@ void setup(){
   size(700,500);
   background(100,200,100);
   smooth();
-  frameRate(200); //repeat draw() 80 times per second
+  frameRate(200); //repeat draw() 200 times per second
 }
 
 float ballX = 50; // float is decimal number. this variable is declared
 float ballY = 250/2;
-float ballSpeedX = 3; // how much distance to add to the ball each frame update
+float ballSpeedX = 1; // how much distance to add to the ball each frame update
 float ballSpeedY = 0;
 int paddleWidth = 80;
 
@@ -23,9 +23,9 @@ void draw(){
   //decide which way the ball should move
   // does it hit the paddle?
   if(ballX>(width-20) && ballY>mouseY && ballY<(mouseY+paddleWidth)){ 
-    float angle = random(-60,60); //spits out an angle in degrees
-    ballSpeedX = 3*cos(angle);
-    ballSpeedY = 3*sin(angle);
+    //float angle = random(-60,60); //spits out an angle in degrees
+    ballSpeedX = -1;
+    //ballSpeedY = 1*sin(angle);
   }
   
   if(ballX < 0){ //does it hit the left side of the screen?
